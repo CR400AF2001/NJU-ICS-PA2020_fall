@@ -1,0 +1,377 @@
+------make------
+1612585450580
+Sat 06 Feb 2021 12:24:10 PM CST
+make-[1]: Entering directory '/home/pa191250026/pa2020_fall'
+cd nemu && make
+------make------
+1612585450608
+Sat 06 Feb 2021 12:24:10 PM CST
+make-[2]: Entering directory '/home/pa191250026/pa2020_fall/nemu'
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/mmu/cache.o src/memory/mmu/cache.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/mmu/tlb.o src/memory/mmu/tlb.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/mmu/page.o src/memory/mmu/page.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/mmu/segment.o src/memory/mmu/segment.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/memory/memory.o src/memory/memory.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/main.o src/main.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/sdl.o src/device/sdl.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/io/mm_io.o src/device/io/mm_io.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/io/port_io.o src/device/io/port_io.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/i8259_pic.o src/device/i8259_pic.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/dev/audio.o src/device/dev/audio.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/dev/vga-palette.o src/device/dev/vga-palette.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/dev/audio-web.o src/device/dev/audio-web.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/dev/ide.o src/device/dev/ide.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/dev/keyboard.o src/device/dev/keyboard.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/dev/timer.o src/device/dev/timer.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/dev/vga.o src/device/dev/vga.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/device/dev/serial.o src/device/dev/serial.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/monitor/breakpoint.o src/monitor/breakpoint.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/monitor/ui.o src/monitor/ui.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/monitor/expr.o src/monitor/expr.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/monitor/elf.o src/monitor/elf.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/cpu.o src/cpu/cpu.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/test/fpu_test.o src/cpu/test/fpu_test.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/test/alu_test.o src/cpu/test/alu_test.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/decode/opcode.o src/cpu/decode/opcode.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/decode/sib.o src/cpu/decode/sib.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/decode/opcode_ref.o src/cpu/decode/opcode_ref.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/decode/debug.o src/cpu/decode/debug.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/decode/operand.o src/cpu/decode/operand.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/decode/modrm.o src/cpu/decode/modrm.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/reg.o src/cpu/reg.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/alu.o src/cpu/alu.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/jmp.o src/cpu/instr/jmp.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/bt.o src/cpu/instr/bt.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/lea.o src/cpu/instr/lea.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/leave.o src/cpu/instr/leave.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/cmov.o src/cpu/instr/cmov.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/inc.o src/cpu/instr/inc.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/out.o src/cpu/instr/out.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/opcode_2_byte.o src/cpu/instr/opcode_2_byte.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/int_.o src/cpu/instr/int_.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/lgdt.o src/cpu/instr/lgdt.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/cmps.o src/cpu/instr/cmps.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/sti.o src/cpu/instr/sti.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/rep_repe.o src/cpu/instr/rep_repe.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/stos.o src/cpu/instr/stos.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/neg.o src/cpu/instr/neg.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/div.o src/cpu/instr/div.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/data_size.o src/cpu/instr/data_size.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/cli.o src/cpu/instr/cli.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/idiv.o src/cpu/instr/idiv.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/mul.o src/cpu/instr/mul.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/sbb.o src/cpu/instr/sbb.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/and.o src/cpu/instr/and.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/adc.o src/cpu/instr/adc.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/sub.o src/cpu/instr/sub.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/shr.o src/cpu/instr/shr.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/cbw.o src/cpu/instr/cbw.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/push.o src/cpu/instr/push.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/cmp.o src/cpu/instr/cmp.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/flags.o src/cpu/instr/flags.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/shl.o src/cpu/instr/shl.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/group.o src/cpu/instr/group.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/iret.o src/cpu/instr/iret.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/not.o src/cpu/instr/not.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/setcc.o src/cpu/instr/setcc.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/cltd.o src/cpu/instr/cltd.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/test.o src/cpu/instr/test.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/nemu_trap.o src/cpu/instr/nemu_trap.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/imul.o src/cpu/instr/imul.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/inv.o src/cpu/instr/inv.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/ret.o src/cpu/instr/ret.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/in.o src/cpu/instr/in.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/pop.o src/cpu/instr/pop.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/lidt.o src/cpu/instr/lidt.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/nop.o src/cpu/instr/nop.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/movs.o src/cpu/instr/movs.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/add.o src/cpu/instr/add.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/call.o src/cpu/instr/call.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/mov.o src/cpu/instr/mov.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/or.o src/cpu/instr/or.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/hlt.o src/cpu/instr/hlt.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/dec.o src/cpu/instr/dec.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/sar.o src/cpu/instr/sar.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/xor.o src/cpu/instr/xor.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/jcc.o src/cpu/instr/jcc.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/instr/x87.o src/cpu/instr/x87.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/intr.o src/cpu/intr.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/cpu/fpu.o src/cpu/fpu.c
+gcc -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include   -c -o src/parse_args.o src/parse_args.c
+gcc -o nemu src/memory/mmu/cache.o src/memory/mmu/tlb.o src/memory/mmu/page.o src/memory/mmu/segment.o src/memory/memory.o src/main.o src/device/sdl.o src/device/io/mm_io.o src/device/io/port_io.o src/device/i8259_pic.o src/device/dev/audio.o src/device/dev/vga-palette.o src/device/dev/audio-web.o src/device/dev/ide.o src/device/dev/keyboard.o src/device/dev/timer.o src/device/dev/vga.o src/device/dev/serial.o src/monitor/breakpoint.o src/monitor/ui.o src/monitor/expr.o src/monitor/elf.o src/cpu/cpu.o src/cpu/test/fpu_test.o src/cpu/test/alu_test.o src/cpu/decode/opcode.o src/cpu/decode/sib.o src/cpu/decode/opcode_ref.o src/cpu/decode/debug.o src/cpu/decode/operand.o src/cpu/decode/modrm.o src/cpu/reg.o src/cpu/alu.o src/cpu/instr/jmp.o src/cpu/instr/bt.o src/cpu/instr/lea.o src/cpu/instr/leave.o src/cpu/instr/cmov.o src/cpu/instr/inc.o src/cpu/instr/out.o src/cpu/instr/opcode_2_byte.o src/cpu/instr/int_.o src/cpu/instr/lgdt.o src/cpu/instr/cmps.o src/cpu/instr/sti.o src/cpu/instr/rep_repe.o src/cpu/instr/stos.o src/cpu/instr/neg.o src/cpu/instr/div.o src/cpu/instr/data_size.o src/cpu/instr/cli.o src/cpu/instr/idiv.o src/cpu/instr/mul.o src/cpu/instr/sbb.o src/cpu/instr/and.o src/cpu/instr/adc.o src/cpu/instr/sub.o src/cpu/instr/shr.o src/cpu/instr/cbw.o src/cpu/instr/push.o src/cpu/instr/cmp.o src/cpu/instr/flags.o src/cpu/instr/shl.o src/cpu/instr/group.o src/cpu/instr/iret.o src/cpu/instr/not.o src/cpu/instr/setcc.o src/cpu/instr/cltd.o src/cpu/instr/test.o src/cpu/instr/nemu_trap.o src/cpu/instr/imul.o src/cpu/instr/inv.o src/cpu/instr/ret.o src/cpu/instr/in.o src/cpu/instr/pop.o src/cpu/instr/lidt.o src/cpu/instr/nop.o src/cpu/instr/movs.o src/cpu/instr/add.o src/cpu/instr/call.o src/cpu/instr/mov.o src/cpu/instr/or.o src/cpu/instr/hlt.o src/cpu/instr/dec.o src/cpu/instr/sar.o src/cpu/instr/xor.o src/cpu/instr/jcc.o src/cpu/instr/x87.o src/cpu/intr.o src/cpu/fpu.o src/parse_args.o ../libs/nemu-ref/lib-nemu-ref.a -lreadline -lSDL
+make-[2]: Leaving directory '/home/pa191250026/pa2020_fall/nemu'
+cd testcase && make
+------make------
+1612585460120
+Sat 06 Feb 2021 12:24:20 PM CST
+make-[2]: Entering directory '/home/pa191250026/pa2020_fall/testcase'
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/start.o start.S	
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mov.o src/mov.S
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mov-cmp.o src/mov-cmp.S
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/bit.o src/bit.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/hello-str.o src/hello-str.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/fib.o src/fib.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mov-jcc.o src/mov-jcc.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/min3.o src/min3.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/matrix-mul-small.o src/matrix-mul-small.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/shuixianhua.o src/shuixianhua.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/if-else.o src/if-else.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/prime.o src/prime.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/sub-longlong.o src/sub-longlong.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/gotbaha.o src/gotbaha.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/hello-inline.o src/hello-inline.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/matrix-mul.o src/matrix-mul.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/movsx.o src/movsx.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/fact.o src/fact.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/pascal.o src/pascal.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mul-longlong.o src/mul-longlong.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/wanshu.o src/wanshu.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/sum.o src/sum.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/mov-c.o src/mov-c.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/max.o src/max.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/select-sort.o src/select-sort.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/echo.o src/echo.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/add-longlong.o src/add-longlong.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/test-float.o src/test-float.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/quick-sort.o src/quick-sort.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/add.o src/add.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/string.o src/string.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/leap-year.o src/leap-year.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/32_keyboard_inline.o src/32_keyboard_inline.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/bubble-sort.o src/bubble-sort.c
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/struct.o src/struct.c
+ld -m elf_i386 -e start -o src/mov src/start.o src/mov.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/mov
+objcopy: src/mov: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/mov bin/mov
+objcopy -S -O binary -B i386 bin/mov bin/mov.img
+objcopy: Input file `bin/mov' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/mov-cmp src/start.o src/mov-cmp.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/mov-cmp
+objcopy: src/mov-cmp: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/mov-cmp bin/mov-cmp
+objcopy -S -O binary -B i386 bin/mov-cmp bin/mov-cmp.img
+objcopy: Input file `bin/mov-cmp' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/bit src/start.o src/bit.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/bit
+objcopy: src/bit: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/bit bin/bit
+objcopy -S -O binary -B i386 bin/bit bin/bit.img
+objcopy: Input file `bin/bit' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/hello-str src/start.o src/hello-str.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/hello-str
+objcopy: src/hello-str: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/hello-str bin/hello-str
+objcopy -S -O binary -B i386 bin/hello-str bin/hello-str.img
+objcopy: Input file `bin/hello-str' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/fib src/start.o src/fib.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/fib
+objcopy: src/fib: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/fib bin/fib
+objcopy -S -O binary -B i386 bin/fib bin/fib.img
+objcopy: Input file `bin/fib' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/mov-jcc src/start.o src/mov-jcc.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/mov-jcc
+objcopy: src/mov-jcc: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/mov-jcc bin/mov-jcc
+objcopy -S -O binary -B i386 bin/mov-jcc bin/mov-jcc.img
+objcopy: Input file `bin/mov-jcc' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/min3 src/start.o src/min3.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/min3
+objcopy: src/min3: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/min3 bin/min3
+objcopy -S -O binary -B i386 bin/min3 bin/min3.img
+objcopy: Input file `bin/min3' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/matrix-mul-small src/start.o src/matrix-mul-small.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/matrix-mul-small
+objcopy: src/matrix-mul-small: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/matrix-mul-small bin/matrix-mul-small
+objcopy -S -O binary -B i386 bin/matrix-mul-small bin/matrix-mul-small.img
+objcopy: Input file `bin/matrix-mul-small' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/shuixianhua src/start.o src/shuixianhua.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/shuixianhua
+objcopy: src/shuixianhua: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/shuixianhua bin/shuixianhua
+objcopy -S -O binary -B i386 bin/shuixianhua bin/shuixianhua.img
+objcopy: Input file `bin/shuixianhua' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/if-else src/start.o src/if-else.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/if-else
+objcopy: src/if-else: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/if-else bin/if-else
+objcopy -S -O binary -B i386 bin/if-else bin/if-else.img
+objcopy: Input file `bin/if-else' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/prime src/start.o src/prime.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/prime
+objcopy: src/prime: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/prime bin/prime
+objcopy -S -O binary -B i386 bin/prime bin/prime.img
+objcopy: Input file `bin/prime' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/sub-longlong src/start.o src/sub-longlong.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/sub-longlong
+objcopy: src/sub-longlong: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/sub-longlong bin/sub-longlong
+objcopy -S -O binary -B i386 bin/sub-longlong bin/sub-longlong.img
+objcopy: Input file `bin/sub-longlong' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/gotbaha src/start.o src/gotbaha.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/gotbaha
+objcopy: src/gotbaha: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/gotbaha bin/gotbaha
+objcopy -S -O binary -B i386 bin/gotbaha bin/gotbaha.img
+objcopy: Input file `bin/gotbaha' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/hello-inline src/start.o src/hello-inline.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/hello-inline
+objcopy: src/hello-inline: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/hello-inline bin/hello-inline
+objcopy -S -O binary -B i386 bin/hello-inline bin/hello-inline.img
+objcopy: Input file `bin/hello-inline' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/matrix-mul src/start.o src/matrix-mul.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/matrix-mul
+objcopy: src/matrix-mul: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/matrix-mul bin/matrix-mul
+objcopy -S -O binary -B i386 bin/matrix-mul bin/matrix-mul.img
+objcopy: Input file `bin/matrix-mul' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/movsx src/start.o src/movsx.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/movsx
+objcopy: src/movsx: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/movsx bin/movsx
+objcopy -S -O binary -B i386 bin/movsx bin/movsx.img
+objcopy: Input file `bin/movsx' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/fact src/start.o src/fact.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/fact
+objcopy: src/fact: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/fact bin/fact
+objcopy -S -O binary -B i386 bin/fact bin/fact.img
+objcopy: Input file `bin/fact' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/pascal src/start.o src/pascal.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/pascal
+objcopy: src/pascal: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/pascal bin/pascal
+objcopy -S -O binary -B i386 bin/pascal bin/pascal.img
+objcopy: Input file `bin/pascal' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/mul-longlong src/start.o src/mul-longlong.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/mul-longlong
+objcopy: src/mul-longlong: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/mul-longlong bin/mul-longlong
+objcopy -S -O binary -B i386 bin/mul-longlong bin/mul-longlong.img
+objcopy: Input file `bin/mul-longlong' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/wanshu src/start.o src/wanshu.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/wanshu
+objcopy: src/wanshu: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/wanshu bin/wanshu
+objcopy -S -O binary -B i386 bin/wanshu bin/wanshu.img
+objcopy: Input file `bin/wanshu' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/sum src/start.o src/sum.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/sum
+objcopy: src/sum: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/sum bin/sum
+objcopy -S -O binary -B i386 bin/sum bin/sum.img
+objcopy: Input file `bin/sum' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/mov-c src/start.o src/mov-c.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/mov-c
+objcopy: src/mov-c: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/mov-c bin/mov-c
+objcopy -S -O binary -B i386 bin/mov-c bin/mov-c.img
+objcopy: Input file `bin/mov-c' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/max src/start.o src/max.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/max
+objcopy: src/max: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/max bin/max
+objcopy -S -O binary -B i386 bin/max bin/max.img
+objcopy: Input file `bin/max' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/select-sort src/start.o src/select-sort.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/select-sort
+objcopy: src/select-sort: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/select-sort bin/select-sort
+objcopy -S -O binary -B i386 bin/select-sort bin/select-sort.img
+objcopy: Input file `bin/select-sort' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/echo src/start.o src/echo.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/echo
+objcopy: src/echo: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/echo bin/echo
+objcopy -S -O binary -B i386 bin/echo bin/echo.img
+objcopy: Input file `bin/echo' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/add-longlong src/start.o src/add-longlong.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/add-longlong
+objcopy: src/add-longlong: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/add-longlong bin/add-longlong
+objcopy -S -O binary -B i386 bin/add-longlong bin/add-longlong.img
+objcopy: Input file `bin/add-longlong' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/test-float src/start.o src/test-float.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/test-float
+objcopy: src/test-float: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/test-float bin/test-float
+objcopy -S -O binary -B i386 bin/test-float bin/test-float.img
+objcopy: Input file `bin/test-float' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/quick-sort src/start.o src/quick-sort.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/quick-sort
+objcopy: src/quick-sort: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/quick-sort bin/quick-sort
+objcopy -S -O binary -B i386 bin/quick-sort bin/quick-sort.img
+objcopy: Input file `bin/quick-sort' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/add src/start.o src/add.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/add
+objcopy: src/add: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/add bin/add
+objcopy -S -O binary -B i386 bin/add bin/add.img
+objcopy: Input file `bin/add' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/string src/start.o src/string.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/string
+objcopy: src/string: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/string bin/string
+objcopy -S -O binary -B i386 bin/string bin/string.img
+objcopy: Input file `bin/string' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/leap-year src/start.o src/leap-year.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/leap-year
+objcopy: src/leap-year: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/leap-year bin/leap-year
+objcopy -S -O binary -B i386 bin/leap-year bin/leap-year.img
+objcopy: Input file `bin/leap-year' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/32_keyboard_inline src/start.o src/32_keyboard_inline.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/32_keyboard_inline
+objcopy: src/32_keyboard_inline: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/32_keyboard_inline bin/32_keyboard_inline
+objcopy -S -O binary -B i386 bin/32_keyboard_inline bin/32_keyboard_inline.img
+objcopy: Input file `bin/32_keyboard_inline' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/bubble-sort src/start.o src/bubble-sort.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/bubble-sort
+objcopy: src/bubble-sort: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/bubble-sort bin/bubble-sort
+objcopy -S -O binary -B i386 bin/bubble-sort bin/bubble-sort.img
+objcopy: Input file `bin/bubble-sort' ignores binary architecture parameter.
+ld -m elf_i386 -e start -o src/struct src/start.o src/struct.o ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property src/struct
+objcopy: src/struct: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+cp src/struct bin/struct
+objcopy -S -O binary -B i386 bin/struct bin/struct.img
+objcopy: Input file `bin/struct' ignores binary architecture parameter.
+make-[2]: Leaving directory '/home/pa191250026/pa2020_fall/testcase'
+cd kernel && make
+------make------
+1612585461312
+Sat 06 Feb 2021 12:24:21 PM CST
+make-[2]: Entering directory '/home/pa191250026/pa2020_fall/kernel'
+gcc -m32 -MMD -I./include -I../include   -c -o src/irq/do_irq.o src/irq/do_irq.S
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/syscall/do_syscall.o src/syscall/do_syscall.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/fs/fs.o src/fs/fs.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/memory/vmem.o src/memory/vmem.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/memory/kvm.o src/memory/kvm.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/memory/mm.o src/memory/mm.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/main.o src/main.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/lib/misc.o src/lib/misc.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/lib/printk.o src/lib/printk.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/lib/serial.o src/lib/serial.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/irq/idt.o src/irq/idt.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/irq/i8259.o src/irq/i8259.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/irq/irq_handle.o src/irq/irq_handle.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/elf/elf.o src/elf/elf.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/driver/ide/cache.o src/driver/ide/cache.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/driver/ide/dma.o src/driver/ide/dma.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/driver/ide/ide.o src/driver/ide/ide.c
+gcc -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I../libs/newlib/include   -c -o src/driver/ide/disk.o src/driver/ide/disk.c
+gcc -m32 -MMD -I./include -I../include   -c -o start/start.o start/start.S
+ld -Ttext=0xc0030000 -m elf_i386  -e start -o kernel start/start.o ./src/irq/do_irq.o ./src/syscall/do_syscall.o ./src/fs/fs.o ./src/memory/vmem.o ./src/memory/kvm.o ./src/memory/mm.o ./src/main.o ./src/lib/misc.o ./src/lib/printk.o ./src/lib/serial.o ./src/irq/idt.o ./src/irq/i8259.o ./src/irq/irq_handle.o ./src/elf/elf.o ./src/driver/ide/cache.o ./src/driver/ide/dma.o ./src/driver/ide/ide.o ./src/driver/ide/disk.o src/memory/mm_malloc.o  ../libs/newlib/libc.a
+objcopy --remove-section .note.gnu.property kernel
+objcopy: kernel: warning: empty loadable segment detected at vaddr=0x8048000, is this intentional?
+objcopy -S -O binary kernel kernel.img
+make-[2]: Leaving directory '/home/pa191250026/pa2020_fall/kernel'
+make-[1]: Leaving directory '/home/pa191250026/pa2020_fall'
